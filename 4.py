@@ -11,7 +11,10 @@ for i in range(len(b) - 1, -1, -1):
     new_b.append(int(b[i] + '0' * (len(b) - i - 1)))
 # print(new_a)
 # print(new_b)
-transform_a = numpy.fft.fft(new_a)
+new_a=[1,0,3,2]
+transform_a = numpy.fft.ifft(new_a)
+transform_a = numpy.fft.fft(transform_a)
+print(transform_a)
 transform_b = numpy.fft.fft(new_b)
 print(4)
 # print(transform_a)

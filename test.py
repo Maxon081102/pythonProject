@@ -14,3 +14,5 @@ for i in range(len(b) - 1, -1, -1):
 transform_a = numpy.fft.fft(new_a)
 transform_b = numpy.fft.fft(new_b)
 print(4)
+q=[1,2,3,4,5,6,7]
+q.reverse()
